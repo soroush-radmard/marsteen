@@ -1,0 +1,288 @@
+/* Project Responsive */
+
+body{
+    --services-h-size-768: 1.15rem;
+    --services-p-size-768: .9rem;
+    --line-height: 1.6rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .services-wrapper>.left-side{
+        text-align: right;
+    }
+    
+    .services-wrapper>.right-side{
+        flex-basis: 27rem;
+    }
+
+    .customer-satisfaction .head-title h2{
+        font-size: 1.7rem;
+    }
+
+    .customer-satisfaction .customer-info-wrapper .customer-logo-brand{
+        flex-basis: 4.5rem;
+    }
+    
+    .customer-satisfaction .customer-info-wrapper .customer-name p:nth-child(1){
+        font-weight: bold;
+        margin: 0;
+        font-size: 1.1rem;
+    }
+    
+    .customer-satisfaction .customer-info-wrapper .customer-name p:nth-child(2){
+        font-weight: 100;
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .landing .landing-title-right h1{
+        font-size: 3rem;
+    }
+
+    .landing .landing-title-right p{
+        font-size: 1rem;
+    }
+
+    .landing .landing-title-right .consultant-btn{
+        font-size: 1rem;  
+    }
+
+    .landing .landing-img-left{
+        flex-basis: 32rem;
+    }
+
+    .services-wrapper>.right-side{
+        flex-basis: 32rem;
+    }
+
+    .services-wrapper>.left-side h2{
+        font-size: 1.4rem;
+    }
+
+    .services-wrapper>.left-side p{
+        font-size: 1rem;
+        line-height: var(--line-height);
+    }
+
+    .options-wrapper>.right-side h2{
+        font-size: 1.4rem;
+    }
+
+    .options-wrapper>.right-side p{
+        font-size: 1rem;
+        line-height: var(--line-height);
+    }
+
+    .options-wrapper>.left-side{
+        flex-basis: 44rem;
+    }
+
+    .team-wrapper .members .member .headline-section{
+        font-size: var(--services-p-size-768);
+        opacity: 80%;
+    }
+
+    .team-wrapper .members .member .profile-img-wrapper{
+        max-width: 12rem;
+    }
+
+    .customer-satisfaction .head-title h2{
+        font-size: 1.5rem;
+    }
+
+    .customer-satisfaction .customer-info-wrapper .customer-logo-brand{
+        flex-basis: 4rem;
+    }
+    
+    .customer-satisfaction .customer-info-wrapper .customer-name p:nth-child(1){
+        font-weight: bold;
+        margin: 0;
+        font-size: 1.1rem;
+    }
+    
+    .customer-satisfaction .customer-info-wrapper .customer-name p:nth-child(2){
+        font-weight: 100;
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .navbar-wrapper .menu-items{
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: -192px;
+        bottom: 0;
+        background-color: #D0F1EA;
+        width: 12rem;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        transition: .3s all;
+        filter: drop-shadow(.3125rem .625rem .9375rem rgba(8,9,13,.4));
+    }
+
+    .navbar-wrapper .menu-items .item{
+        margin-top: 1.2rem;
+        font-size: 1.1rem;
+        border-bottom: .09rem solid #666;
+    }
+
+    .menu-items-wrapper .dropdown-menu{
+        display: block;
+    }
+
+    .navbar .navbar-wrapper .logo{
+        flex-basis: 6rem;
+    }
+
+    .landing .landing-title-right h1{
+        font-size: 2.5rem;
+        margin-bottom: 0;
+    }
+
+    .landing .landing-title-right p{
+        font-size: var(--services-p-size-768);
+        line-height: var(--line-height);
+        margin-bottom: .5rem;
+    }
+
+    .landing .landing-title-right .consultant-btn{
+        font-size: .9rem;  
+    }
+
+    .landing .landing-img-left{
+        flex-basis: 34rem;
+    }
+
+    .services-wrapper>.right-side{
+        flex-basis: 35rem;
+    }
+
+    .services-wrapper>.left-side h2{
+        font-size: var(--services-h-size-768);
+    }
+
+    .services-wrapper>.left-side p{
+        font-size: var(--services-p-size-768);
+        max-width: 25rem;
+        
+    }
+
+    .options-wrapper>.right-side h2{
+        font-size: var(--services-h-size-768);
+    }
+
+    .options-wrapper>.right-side p{
+        font-size: var(--services-p-size-768);
+        line-height: var(--line-height);
+    }
+
+    .options-wrapper>.left-side{
+        flex-basis: 40rem;
+    }
+
+    .team-wrapper .members .member .name-section{
+        font-size: var(1.1rem);
+    }
+
+    .customer-satisfaction .head-title h2{
+        font-size: 1.7rem;
+    }
+
+    .customer-satisfaction .customer-info-wrapper .customer-logo-brand{
+        flex-basis: 4.5rem;
+    }
+    
+    .customer-satisfaction .customer-info-wrapper .customer-name p:nth-child(1){
+        font-weight: bold;
+        margin: 0;
+        font-size: 1.1rem;
+    }
+    
+    .customer-satisfaction .customer-info-wrapper .customer-name p:nth-child(2){
+        font-weight: 100;
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .navbar .navbar-wrapper .logo{
+        flex-basis: 5.5rem;
+    }
+
+    .landing{
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+
+    .landing .landing-img-left{
+        flex-basis: auto;
+        max-width: 28rem;
+    }
+
+    .landing .landing-title-right h1{
+        margin-top: .4rem;
+    }
+
+    .landing .landing-title-right .consultant-btn{
+        font-size: 1rem;  
+    }
+
+    .services-wrapper{
+        flex-direction: column;
+    }
+
+    .services-wrapper>.right-side{
+        flex-basis: auto;
+    }
+
+    .services-wrapper>.right-side .services-illustration{
+        max-width: 24rem;
+    }
+
+    .options-wrapper{
+        flex-direction: column-reverse;
+    }
+
+    .options-wrapper>.left-side{
+        flex-basis: auto;
+    }
+
+    .options-wrapper>.right-side{
+        max-width: 27.15rem;
+    }
+
+    .options-wrapper>.left-side .option-illustration{
+        max-width: 26rem;
+    }
+
+    .team-wrapper .members{
+        flex-wrap: wrap;
+    }
+
+    .team-wrapper .members .member:nth-child(2){
+        align-self: inherit;
+        margin-top: 0;
+        order: -1;
+    }
+}
