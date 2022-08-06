@@ -188,6 +188,7 @@ body {
 }
 
 .options-wrapper>.right-side{
+    color: #081D43;
     direction: rtl;
 }
 
@@ -196,7 +197,6 @@ body {
 }
 
 /* team section */
-
 .team-wrapper .members{
     display: flex;
     justify-content: space-evenly;
@@ -241,33 +241,44 @@ body {
 
 /* customers satisfations section */
 .customer-satisfaction{
+    color: #081D43;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 1.2rem;
+    position: relative;
 }
 
 .customer-satisfaction .head-title h2{
     font-size: 1.9rem;
 }
 
-.customer-satisfaction .customer-info-wrapper{
+.customer-satisfaction .customer-info .customer-info-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
 
-.customer-satisfaction .customer-info-wrapper .customer-logo-brand{
+.customer-satisfaction .customer-info{
+    max-width: 21.875rem;
+    animation: fadeVisibility 0.5s;
+}
+
+.customer-satisfaction .customer-info:not(.active-info){
+    display: none;
+}
+
+.customer-satisfaction .customer-info .customer-info-wrapper .customer-logo-brand{
     flex-basis: 5rem;
 }
 
-.customer-satisfaction .customer-info-wrapper .customer-logo-brand .customer-logo-img{
+.customer-satisfaction .customer-info .customer-info-wrapper .customer-logo-brand .customer-logo-img{
     width: 100%;
 }
 
-.customer-satisfaction .customer-info-wrapper .customer-name{
+.customer-satisfaction .customer-info .customer-info-wrapper .customer-name{
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -275,22 +286,54 @@ body {
     align-items: center;
 }
 
-.customer-satisfaction .customer-info-wrapper .customer-name p:nth-child(1){
+.customer-satisfaction .customer-info .customer-info-wrapper .customer-name p:nth-child(1){
     font-weight: bold;
     margin: 0;
     font-size: 1.2rem;
 }
 
-.customer-satisfaction .customer-info-wrapper .customer-name p:nth-child(2){
+.customer-satisfaction .customer-info .customer-info-wrapper .customer-name p:nth-child(2){
     font-weight: 100;
     font-size: 1rem;
     margin: 0;
 }
 
-.customer-satisfaction .customer-voice{
+.customer-satisfaction .customer-info .customer-voice{
     flex-basis: auto;
 }
 
+.customer-satisfaction .carousel-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.customer-satisfaction .carousel-buttons button{
+    border-radius: 50%;
+    border: 0;
+    font-weight: 400;
+    background-color: #10ac84;
+    color: #f1f2f6;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.customer-satisfaction .carousel-buttons button:hover{
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.customer-satisfaction .carousel-buttons button#previous{
+    margin-left: 1.25rem;
+}
+  
+.customer-satisfaction .carousel-buttons button#next{
+    margin-right: 1.25rem;
+}
 
 .customer-satisfaction-wrapper .upper-customer-wave{
     display: block;
@@ -346,7 +389,7 @@ audio {
 }
 
 .duration{
-    margin-left: 10rem;
+    margin-left: 13rem;
 }
 
 /* footer section */
