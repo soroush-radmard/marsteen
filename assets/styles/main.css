@@ -196,18 +196,6 @@ body {
 }
 
 /* team section */
-.customer-satisfaction-wrapper .upper-team-wave{
-    display: block;
-}
-
-.customer-satisfaction-wrapper .bottom-team-wave{
-    display: block;
-    transform: rotate(180deg);
-}
-
-.e{
-    background-color: #BBEBE1; 
-}
 
 .team-wrapper .members{
     display: flex;
@@ -301,6 +289,20 @@ body {
 
 .customer-satisfaction .customer-voice{
     flex-basis: auto;
+}
+
+
+.customer-satisfaction-wrapper .upper-customer-wave{
+    display: block;
+}
+
+.customer-satisfaction-wrapper .bottom-customer-wave{
+    display: block;
+    transform: rotate(180deg);
+}
+
+.e{
+    background-color: #BBEBE1; 
 }
 
 .voice-wrapper {
