@@ -196,11 +196,11 @@ body {
 }
 
 /* team section */
-.team-members .upper-team-wave{
+.customer-satisfaction-wrapper .upper-team-wave{
     display: block;
 }
 
-.team-members .bottom-team-wave{
+.customer-satisfaction-wrapper .bottom-team-wave{
     display: block;
     transform: rotate(180deg);
 }
