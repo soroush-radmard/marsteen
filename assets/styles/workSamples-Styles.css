@@ -1,0 +1,56 @@
+/* Main */
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "vazir";
+}
+
+.container {
+    max-width: 70rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.wave-navbar{
+    transform: rotate(180deg);
+    width: 100%;
+    z-index: -1;
+    position: static;
+    display: block;
+}
+
+.cards-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 17rem);
+    grid-template-rows: repeat(3, 30rem);
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    row-gap: 2rem;
+}
+
+.card{
+    grid-column: auto/span 1;
+    grid-row: auto/span 1;
+    border: 1px solid black;
+    overflow: hidden;
+    min-height: 30rem;
+}
+
+.card img{
+    width: 100%;
+    display: block;
+    
+}
