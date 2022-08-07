@@ -71,6 +71,27 @@ body {
     text-decoration: none;
     padding: 0 1rem;
     color: #081D43;
+    position: relative;
+    padding-bottom: .5rem;
+}
+
+.item-link::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .125rem;
+    border-radius: .5rem;
+    background-color: #27ae60;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+.item-link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 .dropdown-menu{
@@ -327,8 +348,7 @@ body {
 }
 
 .customer-satisfaction .carousel-buttons button:hover{
-    font-weight: bolder;
-    font-size: 1.4rem;
+    filter: drop-shadow(0 0 .25rem #121212);
 }
 
 .customer-satisfaction .carousel-buttons button#previous{
