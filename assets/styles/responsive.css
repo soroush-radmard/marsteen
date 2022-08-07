@@ -19,6 +19,16 @@ body{
         flex-basis: 27rem;
     }
 
+    .options-wrapper{
+        margin-top: -4rem;
+        margin-bottom: -4rem;
+    }
+
+    .team-wrapper .members{
+        margin-top: -5rem;
+        margin-bottom: -2rem;
+    }
+
     .customer-satisfaction .head-title h2{
         font-size: 1.7rem;
     }
@@ -43,6 +53,11 @@ body{
 @media only screen and (max-width: 992px) {
     .container {
         max-width: 720px;
+    }
+
+    .landing{
+        margin-top: 4.3rem;
+        margin-bottom: -1.75rem;
     }
 
     .landing .landing-title-right h1{
@@ -74,6 +89,11 @@ body{
         line-height: var(--line-height);
     }
 
+    .options-wrapper{
+        margin-top: -3.5rem;
+        margin-bottom: -3.5rem;
+    }
+
     .options-wrapper>.right-side h2{
         font-size: 1.4rem;
     }
@@ -85,6 +105,11 @@ body{
 
     .options-wrapper>.left-side{
         flex-basis: 44rem;
+    }
+
+    .team-wrapper .members{
+        margin-top: -4.5rem;
+        margin-bottom: -3rem;
     }
 
     .team-wrapper .members .member .headline-section{
@@ -114,6 +139,10 @@ body{
         font-weight: 100;
         font-size: 1rem;
         margin: 0;
+    }
+
+    .customer-satisfaction .carousel-buttons{
+        justify-content: space-between;
     }
 }
 
@@ -150,6 +179,11 @@ body{
         flex-basis: 6rem;
     }
 
+    .landing{
+        margin-top: 1rem;
+        margin-bottom: -2.75rem;
+    }
+
     .landing .landing-title-right h1{
         font-size: 2.5rem;
         margin-bottom: 0;
@@ -183,6 +217,11 @@ body{
         
     }
 
+    .options-wrapper{
+        margin-top: -2.5rem;
+        margin-bottom: -2.5rem;
+    }
+
     .options-wrapper>.right-side h2{
         font-size: var(--services-h-size-768);
     }
@@ -194,6 +233,11 @@ body{
 
     .options-wrapper>.left-side{
         flex-basis: 40rem;
+    }
+
+    .team-wrapper .members{
+        margin-top: -3rem;
+        margin-bottom: -2rem;
     }
 
     .team-wrapper .members .member .name-section{
@@ -233,6 +277,7 @@ body{
     .landing{
         flex-direction: column-reverse;
         margin-top: 0;
+        margin-bottom: -.7rem;
     }
 
     .landing .landing-img-left{
@@ -262,6 +307,8 @@ body{
 
     .options-wrapper{
         flex-direction: column-reverse;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .options-wrapper>.left-side{
@@ -278,6 +325,8 @@ body{
 
     .team-wrapper .members{
         flex-wrap: wrap;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .team-wrapper .members .member:nth-child(2){
