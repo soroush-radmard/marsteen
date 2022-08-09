@@ -32,3 +32,9 @@
     font-style: normal;
     font-weight: lighter;
 }
+
+@font-face {
+    font-family: TTNorms;
+    src: url(/assets/fonts/TTNorms/TTNormsPro-Medium.ttf);
+    font-style: normal;
+}

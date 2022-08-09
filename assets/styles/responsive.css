@@ -38,15 +38,11 @@ body{
     }
     
     .customer-satisfaction .customer-info-wrapper .customer-name p:nth-child(1){
-        font-weight: bold;
-        margin: 0;
         font-size: 1.1rem;
     }
     
     .customer-satisfaction .customer-info-wrapper .customer-name p:nth-child(2){
-        font-weight: 100;
         font-size: 1rem;
-        margin: 0;
     }
 }
 
@@ -125,20 +121,16 @@ body{
         font-size: 1.5rem;
     }
 
-    .customer-satisfaction .customer-info-wrapper .customer-logo-brand{
+    .customer-satisfaction .customer-info .customer-info-wrapper .customer-logo-brand{
         flex-basis: 4rem;
     }
     
-    .customer-satisfaction .customer-info-wrapper .customer-name p:nth-child(1){
-        font-weight: bold;
-        margin: 0;
-        font-size: 1.1rem;
+    .customer-satisfaction .customer-info .customer-info-wrapper .customer-name p:nth-child(1){
+        font-size: 1rem;
     }
     
-    .customer-satisfaction .customer-info-wrapper .customer-name p:nth-child(2){
-        font-weight: 100;
-        font-size: 1rem;
-        margin: 0;
+    .customer-satisfaction .customer-info .customer-info-wrapper .customer-name p:nth-child(2){
+        font-size: .9rem;
     }
 
     .customer-satisfaction .carousel-buttons{
@@ -248,20 +240,8 @@ body{
         font-size: 1.7rem;
     }
 
-    .customer-satisfaction .customer-info-wrapper .customer-logo-brand{
-        flex-basis: 4.5rem;
-    }
-    
-    .customer-satisfaction .customer-info-wrapper .customer-name p:nth-child(1){
-        font-weight: bold;
-        margin: 0;
-        font-size: 1.1rem;
-    }
-    
-    .customer-satisfaction .customer-info-wrapper .customer-name p:nth-child(2){
-        font-weight: 100;
-        font-size: 1rem;
-        margin: 0;
+    .customer-satisfaction .customer-info .customer-info-wrapper .customer-logo-brand{
+        flex-basis: 5rem;
     }
 }
 
@@ -270,8 +250,16 @@ body{
         max-width: 100%;
     }
 
+    .wave-navbar{
+        width: 44rem;
+    }
+
     .navbar .navbar-wrapper .logo{
         flex-basis: 5.5rem;
+    }
+
+    .item-link::before{
+        display: none;
     }
 
     .landing{
@@ -321,6 +309,27 @@ body{
 
     .options-wrapper>.left-side .option-illustration{
         max-width: 26rem;
+    }
+
+    .customer-satisfaction .customer-info .customer-info-wrapper .customer-name p:nth-child(1){
+        font-size: .9rem;
+    }
+    
+    .customer-satisfaction .customer-info .customer-info-wrapper .customer-name p:nth-child(2){
+        font-size: .8rem;
+    }
+
+    .customer-satisfaction .customer-info .customer-info-wrapper .customer-logo-brand{
+        flex-basis: 4rem;
+    }
+
+    .duration{
+        margin-left: 10rem;
+    }
+
+    .customer-satisfaction .carousel-buttons button{
+        width: 2rem;
+        height: 2rem;
     }
 
     .team-wrapper .members{

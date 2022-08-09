@@ -13,6 +13,7 @@ html {
 
 body {
     font-family: "vazir";
+    overflow-x: hidden;
 }
 
 .container {
@@ -127,6 +128,7 @@ body {
     text-align: center;
     font-size: 4rem;
     margin-bottom: 2rem;
+    font-family: "TTNorms";
 }
 
 .landing .landing-title-right p{
@@ -429,6 +431,7 @@ audio {
     color: #688BA9;
     text-align: center;
     font-size: .95rem;
+    font-family: "TTNorms";
     margin: 0;
     padding-bottom: .4rem;
 }
