@@ -75,29 +75,20 @@ body {
     direction: rtl;
 }
 
-.card .title-article, .card .description{
+.card .article-thumbnail, .card .title-article{
     padding: 1rem;
 }
 
 .card .title-article{
     line-height: 2rem;
-    margin-bottom: 0;
+    margin: 0;
+    padding-top: .5rem;
     font-weight: 300;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
 }
 
-.card .description{
-    line-height: 1.5rem;
-    padding-bottom: 3rem;
-    margin-top: 0;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-mask-image: linear-gradient(to top, black 0%, black 0%), linear-gradient(to left, black 70%, transparent 100%);
-    -webkit-mask-position: 100% 100%, 100% 100%;
-    -webkit-mask-size: 100% 100%, 7.5rem 2rem;
-    -webkit-mask-repeat: no-repeat;
+.card .article-thumbnail{
+    max-width: 15rem;
 }
 
 .card .visit-btn{

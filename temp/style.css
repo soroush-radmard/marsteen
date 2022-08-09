@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+input{
+    font-family: kalameh;
+}
+
+@font-face {
+    font-family: kalameh;
+    src: url(./kalameh.ttf);
+}
+
+/* Background styles */
+body{
+    font-family: kalameh;
+    font-size: 1rem;
+    background-color: #15181a;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(205.59, 53%, 50%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(271.43, 67%, 64%) 0, transparent 55%);
+    height: 100vh;
+}
+/* Background styles */
+
+/* Glassmorphism card effect */
+.input-forms {
+    backdrop-filter: blur(0.25rem) saturate(180%);
+    -webkit-backdrop-filter: blur(0.25rem) saturate(180%);
+    background-color: rgba(77, 77, 86, 0.7);
+    border-radius: 0.75rem;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.125);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.3rem;
+    padding: 4rem 6rem;
+}
+/* Glassmorphism card effect */
+
+.container {    
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    margin: 6rem auto;
+}
+
+.input-forms .inputbox{
+    position: relative;
+    width: 15.62rem;
+}
+
+.input-forms .inputbox input{
+    width: 100%;
+    padding: 0.62rem;
+    border: 0.0625rem solid rgba(116, 116, 116, 0.575);
+    outline: none;
+    background-color: #aaaaaad9;
+    border-radius: 0.3125rem;
+    font-size: 1.12rem;
+    transition: 0.5;
+}
+
+.input-forms .inputbox span{
+    position: absolute;
+    right: 0;
+    padding: 0.3125rem 0.625rem;
+    pointer-events: none;
+    color: rgba(56, 56, 56, 0.746);
+    font-size: 1.19rem;
+    margin-top: 0.3125rem;
+    display: inline-block;
+    transition: .5s;
+}
+
+.input-forms .inputbox input:focus ~ span{
+    color: rgb(241, 240, 228);
+    transform: translateX(-0.625rem) translateY(-0.4375rem);
+    font-size: 1.22rem;
+    margin-top: -0.625rem;
+    padding: 0rem 0.625rem;
+    background-color: transparent;
+    border-left: 0.0625rem solid rgb(0, 10, 95);
+    border-right: 0.0625rem solid rgb(0, 10, 95);
+}
+
+.input-forms .inputbox input:focus{
+    border: 0.0625rem solid rgb(0, 10, 95);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.75rem;
+}
+
+.buttons .btn{
+    border: none;
+    padding: 0.625rem 1.5625rem;
+    border-radius: 0.75rem;
+    font-size: 1.09rem;
+    font-family: kalameh;
+    text-align: center;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.198);
+    transition: transform 200ms, box-shadow 200ms;
+    cursor: pointer;
+}
+
+.buttons .green{
+    background-color: #2ecc71;
+    box-shadow: 0rem 0.375rem 0 #094c66, 0 0.6875rem rgba(0, 0, 0, 0.109);
+}
+
+.buttons .gray{
+    background-color: #bdc3c7;
+    box-shadow: 0rem 0.375rem 0 rgba(163, 163, 163, 0.45), 0 0.6875rem rgba(0, 0, 0, 0.109);
+
+}
+
+.green:active{
+    transform: translateY(0.25rem);
+    box-shadow: 0 0.1875rem 0 #094c66;
+}
+
+.gray:active{
+    transform: translateY(0.25rem);
+    box-shadow: 0 0.25rem rgb(163, 163, 163);
+}
