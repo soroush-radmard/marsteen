@@ -26,7 +26,7 @@ body {
     padding-left: 1rem;
 }
 
-.wave-navbar-workSample-form{
+.wave-navbar-articles-form{
     transform: rotate(180deg);
     width: 100%;
     z-index: -1;
@@ -38,8 +38,8 @@ body {
 .title{
     text-align: center;
     font-weight: 100;
-    padding-top: 1.5rem;
-    font-size: 2.5rem;
+    padding-top: 2.5rem;
+    font-size: 1.75rem;
 }
 
 .cards-wrapper{
@@ -52,47 +52,55 @@ body {
     column-gap: 1.5rem;
 }
 
+.title{
+    text-align: center;
+    font-weight: 100;
+    padding-top: 1.5rem;
+    font-size: 2rem;
+}
+
 .card{
     grid-column: auto/span 1;
     grid-row: auto/span 1;
-    /* border: 1px solid black; */
     overflow: hidden;
     min-height: 20rem;
     box-shadow: 0 .125rem .5rem 0 var(--clr-gray-light);
     text-align: center;
     border-radius: 1rem;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: right;
+    direction: rtl;
 }
 
-.card .banner-img{
-    position: absolute;
-    background-image: url(/assets/images/1.png);
-    height: 10rem;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.card .title-article, .card .description{
+    padding: 1rem;
 }
 
-.card .profile-img{
-    width: 5rem;
-    clip-path: circle(5rem at center);
-    /* display: block; */
-    margin-top: 7rem;
-}
-
-.card .name{
-    font-size: 1.4rem;
+.card .title-article{
+    line-height: 2rem;
+    margin-bottom: 0;
     font-weight: 300;
+    font-size: 1.35rem;
 }
 
 .card .description{
-    margin: 1rem 2rem;
-    font-size: .9rem;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
+    padding-bottom: 3rem;
+    margin-top: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-mask-image: linear-gradient(to top, black 0%, black 0%), linear-gradient(to left, black 70%, transparent 100%);
+    -webkit-mask-position: 100% 100%, 100% 100%;
+    -webkit-mask-size: 100% 100%, 7.5rem 2rem;
+    -webkit-mask-repeat: no-repeat;
 }
 
-.card .visit-btn, .card .detail-btn{
+.card .visit-btn{
     width: 100%;
     border: none;
     font-size: 1rem;
@@ -101,10 +109,6 @@ body {
     background-color: #1DBA9B;
     padding: .7rem;
     cursor: pointer;
-}
-
-.card .detail-btn{
-    background-color: #f39c12;
 }
 
 .f{
@@ -156,7 +160,7 @@ body {
 }
 
 @media only screen and (max-width: 576px) {
-    .wave-navbar-workSample-form{
+    .wave-navbar-articles-form{
         width: 44rem;
     }
     
