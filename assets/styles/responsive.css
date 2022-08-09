@@ -264,7 +264,7 @@ body{
 
     .landing{
         flex-direction: column-reverse;
-        margin-top: 0;
+        margin-top: 1.5rem;
         margin-bottom: -.7rem;
     }
 
