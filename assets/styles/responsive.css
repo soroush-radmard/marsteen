@@ -24,11 +24,6 @@ body{
         margin-bottom: -4rem;
     }
 
-    .team-wrapper .members{
-        margin-top: -5rem;
-        margin-bottom: -2rem;
-    }
-
     .customer-satisfaction .head-title h2{
         font-size: 1.7rem;
     }
@@ -103,14 +98,8 @@ body{
         flex-basis: 44rem;
     }
 
-    .team-wrapper .members{
-        margin-top: -4.5rem;
-        margin-bottom: -3rem;
-    }
-
     .team-wrapper .members .member .headline-section{
         font-size: var(--services-p-size-768);
-        opacity: 80%;
     }
 
     .team-wrapper .members .member .profile-img-wrapper{
@@ -206,7 +195,6 @@ body{
     .services-wrapper>.left-side p{
         font-size: var(--services-p-size-768);
         max-width: 25rem;
-        
     }
 
     .options-wrapper{
@@ -225,11 +213,6 @@ body{
 
     .options-wrapper>.left-side{
         flex-basis: 40rem;
-    }
-
-    .team-wrapper .members{
-        margin-top: -3rem;
-        margin-bottom: -2rem;
     }
 
     .team-wrapper .members .member .name-section{
