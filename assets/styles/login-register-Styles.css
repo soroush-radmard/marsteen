@@ -11,9 +11,13 @@ html {
     box-sizing: inherit;
 }
 
+a{
+    text-decoration: none;
+    color: #094c66;
+}
+
 body {
     font-family: "vazir";
-    overflow-x: hidden;
     background-image: 
     radial-gradient(at 47% 33%, hsl(205.59, 53%, 50%) 0, transparent 59%), 
     radial-gradient(at 82% 65%, hsl(271.43, 67%, 64%) 0, transparent 55%);
@@ -43,25 +47,26 @@ body {
     border: 0.0625rem solid rgba(255, 255, 255, 0.125);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 4.5rem;
-    /* padding: 4rem 6rem; */
-    padding: 4rem;
-    max-width: 24rem;
+    gap: 2rem;
+    min-width: 24rem;
+    padding: 4rem 0;
 }
 
 .input-forms .inputbox{
     position: relative;
-    width: 18rem;
+    min-width: 18rem;
+    display: block;
 }
 
 .input-forms .inputbox .inputbox__field{
-    position: absolute;
+    /* position: absolute; */
     right: .1rem;
     top: .1rem;
     outline: none;
     width: 100%;
+    display: block;
     border-radius: .7rem;
     border: .125rem solid #e1e5ee;
     background: none;
@@ -80,7 +85,7 @@ body {
 .input-forms .inputbox .inputbox__label{
     position: absolute;
     right: .7rem;
-    top: .65rem;
+    top: .5rem;
     padding: .14rem;
     color: #fff;
     cursor: text;
@@ -90,6 +95,7 @@ body {
         right 200ms ease-in,
         font-size 200ms ease-in;
     background-color: #536379;
+    pointer-events: none;
 }
 
 .input-forms .inputbox__field:focus ~ .inputbox__label,
@@ -103,8 +109,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 2rem;
-    margin-top: 1.75rem;
+    gap: 2rem;
 }
 
 .buttons .btn{
@@ -154,10 +159,10 @@ body {
 
 @media only screen and (max-width: 576px) {
     .input-forms .inputbox{
-        width: 15rem;
+        min-width: 15rem;
     }
 
     .input-forms{
-        max-width: 19rem;
+        min-width: 19rem;
     }
 }
