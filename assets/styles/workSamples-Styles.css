@@ -145,6 +145,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .part1-wrapper ,.part2-wrapper{
@@ -187,11 +188,12 @@ body {
 
 .card .name{
     font-size: 1.4rem;
-    /* margin-left: auto;
-    margin-right: auto; */
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 300;
     max-width: 14.375rem;
     line-height: 1.9rem;
+    display: block;
 }
 
 .card .visit-btn, .card .detail-btn{
