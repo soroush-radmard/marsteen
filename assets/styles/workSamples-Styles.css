@@ -11,6 +11,10 @@ html {
     box-sizing: inherit;
 }
 
+a{
+    text-decoration: none;
+}
+
 body {
     font-family: "vazir";
     overflow: hidden;
@@ -136,6 +140,13 @@ body {
     column-gap: 1.5rem;
 }
 
+.part1-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .part1-wrapper ,.part2-wrapper{
     width: 100%;
     display: block;
@@ -145,7 +156,7 @@ body {
     grid-column: auto/span 1;
     grid-row: auto/span 1;
     overflow: hidden;
-    height: 30rem;
+    height: 25rem;
     box-shadow: 0 .125rem .5rem 0 var(--clr-gray-light);
     text-align: center;
     border-radius: 1rem;
@@ -164,28 +175,23 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
 }
 
 .card .profile-img{
     width: 5rem;
-    clip-path: circle(5rem at center);
+    /* clip-path: circle(5rem at center); */
+    border-radius: 50%;
     margin-top: 7rem;
 }
 
 .card .name{
     font-size: 1.4rem;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     font-weight: 300;
     max-width: 14.375rem;
     line-height: 1.9rem;
-}
-
-.card .description{
-    margin: 1rem auto;
-    font-size: .9rem;
-    line-height: 1.375rem;
-    max-width: 14.375rem;
 }
 
 .card .visit-btn, .card .detail-btn{
@@ -196,7 +202,9 @@ body {
     color: #fff;
     background-color: #1DBA9B;
     padding: .7rem;
+    display: block;
     cursor: pointer;
+    margin: 0;
 }
 
 .card .detail-btn{
