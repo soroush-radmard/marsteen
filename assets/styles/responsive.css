@@ -47,7 +47,7 @@ body{
     }
 
     .landing{
-        margin-top: 4.3rem;
+        /* margin-top: 4.3rem; */
         margin-bottom: -1.75rem;
     }
 
@@ -152,6 +152,14 @@ body{
         border-bottom: .09rem solid #666;
     }
 
+    .item-link::before{
+        display: none;
+    }
+
+    .dropdown-section.active{
+        pointer-events: inherit;
+    }
+
     .menu-items-wrapper .dropdown-menu{
         display: block;
     }
@@ -161,7 +169,7 @@ body{
     }
 
     .landing{
-        margin-top: 1rem;
+        /* margin-top: 1rem; */
         margin-bottom: -2.75rem;
     }
 
@@ -241,13 +249,17 @@ body{
         flex-basis: 5.5rem;
     }
 
+    .dropdown-section.active{
+        pointer-events: inherit;
+    }
+
     .item-link::before{
         display: none;
     }
 
     .landing{
         flex-direction: column-reverse;
-        margin-top: 1.5rem;
+        /* margin-top: 1.5rem; */
         margin-bottom: -.7rem;
     }
 
