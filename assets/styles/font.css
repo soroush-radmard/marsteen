@@ -38,3 +38,9 @@
     src: url(/assets/fonts/TTNorms/TTNormsPro-Medium.ttf);
     font-style: normal;
 }
+
+@font-face {
+    font-family: lalezar;
+    src: url(/assets/fonts/lalezar/Lalezar-Regular.ttf);
+    font-style: normal;
+}
