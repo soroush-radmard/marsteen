@@ -246,17 +246,9 @@ body {
     color: #27ae60;
 }
 
-.popup .title-wrapper{
-    
-}
-
 .popup .title-wrapper .title-popup{
     margin: 0;
     font-size: 1.75rem;
-}
-
-.popup .description-wrapper{
-    
 }
 
 .popup .description-wrapper .description-popup{
@@ -265,10 +257,6 @@ body {
     margin: 0;
     max-width: 13rem;
     text-align: center;
-}
-
-.popup .dismiss-btn{
-    
 }
 
 .popup .dismiss-btn button{
