@@ -1,32 +1,39 @@
 const audio = document.querySelector('audio');
-const container = document.querySelector('.container');
-const audioDuration = document.querySelector('.duration');
-const playButton = document.querySelector('.play-button');
+const audioDuration = document.querySelector('.time-remainer');
+const playButton = document.querySelector('.play-btn');
 let isPlaying = false;
 
-let slidePosition = 0;
-const slides = document.getElementsByClassName('customer-info');
-const totalSlides = slides.length;
-
-const toggleAudio = (event) => {
-	if (isPlaying) {
-		audio.pause()
-		isPlaying = false
-		playButton.classList.remove('playing')
-	} else {
-		audio.play()
-		isPlaying = true
-		playButton.classList.add('playing')
-	}
+function toggleAudio () {
+  if (isPlaying) {
+    audio.pause()
+    isPlaying = false
+    playButton.classList.remove('playing')
+    playButton.classList.add('fa-play')
+    playButton.classList.remove('fa-pause')
+  } else {
+    audio.play()
+    isPlaying = true
+    playButton.classList.add('playing')
+    playButton.classList.add('fa-pause')
+    playButton.classList.remove('fa-play')
 }
-
-audio.onloadedmetadata = () => {
-	let minutes = Math.floor(audio.duration / 60)
-	let seconds = Math.floor(audio.duration - minutes * 60)
-	audioDuration.innerHTML = `${minutes}:${seconds}`
+  
+  audio.onloadedmetadata = () => {
+    let minutes = Math.floor(audio.duration / 60)
+    let seconds = Math.floor(audio.duration - minutes * 60)
+    audioDuration.innerHTML = `${minutes}:${seconds}`
+  }
 }
 
 //////////////////////////////////////////////////////////////
+
+let slidePosition = 0;
+const slides = document.getElementsByClassName('customer-info');
+const play = document.querySelector('.play-btn')
+const next = document.querySelector('#next')
+const prev = document.querySelector('#previous')
+const time = document.querySelector('.time-remainer')
+const totalSlides = slides.length;
 
 document.
   getElementById('next')
@@ -42,10 +49,16 @@ document.
 function updateSlidePosition() {
   for (let slide of slides) {
     slide.classList.remove('active-info');
-    // slide.classList.add('carousel__item--hidden');
   }
 
+  // for (let voice of voices){
+  //   voice.classList.remove('active-info');
+  // }
+
   slides[slidePosition].classList.add('active-info');
+  // voices[slidePosition].classList.add('active-info');
+
+  // audio.pause();
 }
 
 function moveToNextSlide() {
