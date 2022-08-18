@@ -338,16 +338,12 @@ body {
     padding: 0;
 }
 
-.popup .buttons-wrapper{
-
-}
-
 .popup .buttons-wrapper .visit-site-btn{
     outline: none;
     border: none;
     color: #fff;
     border-radius: 1rem;
-    padding: .5rem;
+    padding: .5rem 1rem;
     cursor: pointer;
     background-color: #1DBA9B;
     text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.198);
@@ -368,7 +364,7 @@ body {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 300;
-    margin: .5rem 0;
+    margin: 0;
     color: #080808;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -405,30 +401,6 @@ audio{
     cursor: pointer;
 }
 
-.popup .comment-wrapper{
-
-}
-
-.popup .comment-wrapper .voice-wrapper{
-    
-}
-
-.popup .comment-wrapper .voice-wrapper>.left-side{
-    
-}
-
-.popup .comment-wrapper .voice-wrapper>.left-side .play-btn{
-    
-}
-
-.popup .comment-wrapper .voice-wrapper>.right-side{
-    
-}
-
-.popup .comment-wrapper .voice-wrapper>.right-side .time-remainer{
-    
-}
-
 .f{
     background-color: #BBEBE1;
 }
@@ -458,6 +430,14 @@ audio{
     .cards-wrapper{
         margin-top: 6rem;
     }
+
+    .popup .logo-wrapper{
+        bottom: -15%;
+    }
+    
+    .popup .logo-wrapper .logo-img-popup{
+        max-width: 5rem;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -472,6 +452,14 @@ audio{
 
     .cards-wrapper{
         margin-top: 5rem;
+    }
+
+    .popup .logo-wrapper{
+        bottom: -18%;
+    }
+
+    .popup .buttons-wrapper .visit-site-btn{
+        font-size: .9rem;
     }
 }
 
@@ -516,6 +504,18 @@ audio{
     .navbar .navbar-wrapper .logo{
         flex-basis: 6rem;
     }
+
+    .popup.active, #popup-section.active{
+        width: 30rem;
+    }
+
+    .popup .text-wrapper{
+        font-size: .9rem;
+    }
+
+    .customer-title .customer-text{
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -542,5 +542,22 @@ audio{
 
     .item-link::before{
         display: none;
+    }
+
+    .popup.active, #popup-section.active{
+        top: 50%;
+        width: 20rem;
+    }
+
+    .popup .logo-wrapper{
+        bottom: -25%;
+    }
+
+    .popup .logo-wrapper .logo-img-popup{
+        max-width: 4rem;
+    }
+
+    .popup .buttons-wrapper{
+        text-align: center;
     }
 }
