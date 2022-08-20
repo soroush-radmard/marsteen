@@ -1,0 +1,428 @@
+/* Main */
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    font-family: "vazir";
+    overflow: hidden;
+    --clr-gray-light: #b0bec5;
+    background-color: #eeeeee;
+}
+
+.container {
+    max-width: 70rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.wave-navbar-articles-form{
+    transform: rotate(180deg);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    display: block;
+    margin-top: -1.7rem;
+}
+
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-wrapper .logo{
+    flex-basis: 7rem; /*125px*/
+}
+
+.navbar-wrapper .logo .logo-img{
+    display: block;
+    width: 100%; 
+}
+
+.menu-items-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu-items{
+    list-style-type: none;
+    direction: rtl;
+    display: flex;
+    margin: 0;
+    padding-right: 0;
+}
+
+.menu-items .item{
+    display: inline;
+}
+
+.menu-items .item .item-link{
+    text-decoration: none;
+    padding: 0 1rem;
+    color: #081D43;
+    position: relative;
+    padding-bottom: .5rem;
+}
+
+.item-link::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .125rem;
+    border-radius: .5rem;
+    background-color: #27ae60;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+.item-link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.dropdown-menu{
+    cursor: pointer;
+    font-size: 1.6rem;
+    display: none;
+}
+
+.article-wrapper{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    direction: rtl;
+    margin-top: 8rem;
+}
+
+.article-wrapper .main-article{
+    grid-column: 1/10;
+    grid-row: 1/auto;
+    background-color: rgba(223, 223, 223, 0.793);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.article-wrapper .sidebar{
+    grid-column: 10/12;
+    grid-row: 1/auto;
+    background-color: rgba(223, 223, 223, 0.793);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.title-wrapper .title{
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.title-wrapper .title:before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: .31rem;
+    width: 3.4rem;
+    background-color: rgba(17, 17, 17, 0.8);
+}
+
+.title-wrapper .title:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 4%;
+    height: 0.0625rem;
+    width: 95%;
+    max-width: 16rem;
+    background-color: #333;
+}
+
+.article-wrapper .main-article .article-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.2rem;
+}
+
+.article-wrapper .main-article .article-header .breadcrumb .breadcrumb-item{
+    color: rgba(0, 0, 0, 0.7);
+    margin-left: .1rem;
+}
+
+.article-wrapper .main-article .article-header .breadcrumb .breadcrumb-item i{
+    margin-left: .5rem;
+}
+
+.article-header2 .keyword-section-wrapper .keyword-item{
+    background-color: #e67e22;
+    padding: 0 .3rem;
+    border-radius: .2rem;
+    color: #fff;
+    font-size: .8rem;
+}
+
+.article-header2 .article-title{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.article-header2 .article-sub-title{
+    text-align: left;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.644);
+}
+
+.article-header2 .article-meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+}
+
+.article-header2 .article-meta .comment-readtime-section i{
+    margin: 0 .5rem;
+}
+
+.article-wrapper .main-article .cover-image-wrapper .cover-image{
+    width: 100%;
+}
+
+.article-wrapper .main-article .preface-wrapper .preface-text{
+    line-height: 1.6rem;
+}
+
+.article-wrapper .main-article .what-we-would-get-wrapper{
+    padding: 1rem;
+    border: .06rem solid rgba(0, 0, 0, 0.14);
+    border-radius: .3rem;
+}
+
+.what-we-would-get-wrapper .inner-box>.title{
+    text-align: center;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.what-we-would-get-wrapper .inner-box>.items>.item{
+    line-height: 1.9rem;
+}
+
+.article-wrapper .main-article .article-text>.title{
+    font-weight: 600;
+}
+
+.article-wrapper .main-article .article-text>.text{
+    line-height: 1.6rem;
+}
+
+.sidebar .newposts-sidebar .posts-list .list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.sidebar .newposts-sidebar .posts-list .list .list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .3rem;
+}
+
+.posts-list .list .list-item .post-img-wrapper .post-thumbnail-img{
+    width: 8rem;
+}
+
+.posts-list .list .list-item .post-body-wrapper{
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: .4rem 0;
+}
+
+.posts-list .list .list-item .post-body-wrapper .post-title{
+    font-size: .8rem;
+    margin: 0;
+    font-weight: 500;
+    line-height: 1rem;
+}
+
+.posts-list .list .list-item .post-body-wrapper .release-date{
+    font-size: .69rem;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.posts-list .list .list-item .post-body-wrapper .release-date i{
+    margin-left: .3rem;
+}
+
+.f{
+    background-color: #BBEBE1;
+}
+
+.wave-footer{
+    display: block;
+}
+
+.footer-wrapper>p{
+    color: #688BA9;
+    text-align: center;
+    font-size: .95rem;
+    font-family: "TTNorms";
+    margin: 0;
+    padding-bottom: .4rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .article-wrapper .main-article{
+        grid-column: 1/-1;
+    }
+
+    .article-wrapper .sidebar{
+        grid-column: 1/-1;
+        grid-row: inherit;
+    }
+
+    .sidebar .newposts-sidebar .posts-list .list .list-item{
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    .posts-list .list .list-item .post-body-wrapper{
+        width: 100%;
+    }
+
+    .posts-list .list .list-item .post-body-wrapper .post-title{
+        font-size: 1rem;
+    }
+
+    .article-wrapper{
+        margin-top: 5rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .article-header2 .article-title{
+        font-size: 1.5rem;
+    }
+
+    .article-header2 .article-sub-title{
+        font-size: 1.5rem;
+    }
+
+    .article-header2 .article-meta{
+        font-size: .8rem;
+    }
+
+    .article-wrapper{
+        margin-top: 3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-wrapper .menu-items{
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: -192px;
+        bottom: 0;
+        background-color: #D0F1EA;
+        width: 12rem;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        transition: .3s all;
+        filter: drop-shadow(.3125rem .625rem .9375rem rgba(8,9,13,.4));
+    }
+
+    .navbar-wrapper .menu-items .item{
+        margin-top: 1.2rem;
+        font-size: 1.1rem;
+        border-bottom: .09rem solid #666;
+    }
+
+    .menu-items-wrapper .dropdown-menu{
+        display: block;
+    }
+
+    .navbar .navbar-wrapper .logo{
+        flex-basis: 6rem;
+    }
+
+    .posts-list .list .list-item .post-body-wrapper .post-title{
+        line-height: 1.6rem;
+    }
+
+    .article-wrapper .main-article .article-header .breadcrumb .breadcrumb-item{
+        line-height: 1.6rem;
+    }
+
+    .article-wrapper{
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .wave-navbar-articles-form{
+        width: 44rem;
+    }
+    
+    .navbar .navbar-wrapper .logo{
+        flex-basis: 5.5rem;
+    }
+
+    .item-link::before{
+        display: none;
+    }
+
+    .article-wrapper .main-article .article-header .breadcrumb .breadcrumb-item, .delimiter{
+        display: none;
+    }
+
+    .posts-list .list .list-item .post-body-wrapper{
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .posts-list .list .list-item .post-body-wrapper .post-title{
+        font-size: .9rem;
+        line-height: 1.2rem;
+    }
+
+    .article-wrapper{
+        margin-top: 1rem;
+    }
+}
