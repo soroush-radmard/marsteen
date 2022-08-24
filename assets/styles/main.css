@@ -455,25 +455,21 @@ body {
     background-color: #BBEBE1; 
 }
 
-.customer-voice .voice-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .5rem 1rem;
-    backdrop-filter: blur(1rem) saturate(180%);
-    background-color: rgba(117, 218, 97, 0.5);
+.customer-message .message-wrapper{
+    padding: .6rem 1rem;
+    backdrop-filter: blur(.1rem) saturate(180%);
     border-radius: 1rem;
     border: .125rem solid rgba(209, 213, 219, 0.3);
     margin: 0 auto;
     max-width: 18rem;
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
-audio{
-	display: none;
-}
-
-.customer-voice .voice-wrapper>.left-side .play-btn{
-    cursor: pointer;
+.customer-message .message-wrapper .message{
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    line-height: 1.6rem;
 }
 
 /* footer section */
