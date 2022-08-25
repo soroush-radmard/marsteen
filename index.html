@@ -33,7 +33,7 @@
               <li class="item"><a href="#" class="item-link">تماس</a></li>
               <li class="item dropdown-section" data-dropdown>
                 <!-- <button class="link item-link" data-dropdown-button>مقالات</button> -->
-                <a href="#" class="link item-link" data-dropdown-button>مقالات <i class="fa-solid fa-angle-down"></i></a>
+                <a href="#" class="link item-link">مقالات <i class="fa-solid fa-angle-down" data-dropdown-button></i></a>
                 <div class="dropdown-menu-section information-grid">
                   <div>
                     <div class="dropdown-links">
@@ -58,7 +58,7 @@
         <div class="landing-title-right">
           <h1>Marsteen</h1>
           <p>بهت کمک می کنیم که کسب و کارتو آنلاین کنی به روش ساده و آسون</p>
-          <button class="consultant-btn" id="btn-consult">مشاوره رایگان</button>
+          <a class="consultant-btn">مشاوره رایگان</a>
         </div>
       </section>
     </header>
@@ -182,7 +182,7 @@
             </div>
 
             <div class="headline-section">
-              <p>CTO | مدیر فنی</p>
+              <p><span>CTO</span> | مدیر فنی</p>
             </div>
           </div>
 
@@ -196,7 +196,7 @@
             </div>
 
             <div class="headline-section">
-              <p>CEO | مدیر عامل</p>
+              <p><span>CEO</span> | مدیر عامل</p>
             </div>
           </div>
 
@@ -210,7 +210,7 @@
             </div>
 
             <div class="headline-section">
-              <p>CMO | مدیر بازاریابی</p>
+              <p><span>CMO</span> | مدیر بازاریابی</p>
             </div>
           </div>
         </div>
@@ -220,10 +220,54 @@
 
     <footer>
         <div class="copyright-section">
-          <svg class="wave-footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#BBEBE1" fill-opacity="1" d="M0,64L34.3,58.7C68.6,53,137,43,206,74.7C274.3,107,343,181,411,208C480,235,549,213,617,192C685.7,171,754,149,823,154.7C891.4,160,960,192,1029,186.7C1097.1,181,1166,139,1234,117.3C1302.9,96,1371,96,1406,96L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+          <svg class="wave-footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 318"><path fill="#BBEBE1" fill-opacity="1" d="M0,64L34.3,58.7C68.6,53,137,43,206,74.7C274.3,107,343,181,411,208C480,235,549,213,617,192C685.7,171,754,149,823,154.7C891.4,160,960,192,1029,186.7C1097.1,181,1166,139,1234,117.3C1302.9,96,1371,96,1406,96L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
           <div class="f">
             <div class="footer-wrapper container">
-              <p>copyright © <script>document.write(new Date().getFullYear())</script> <strong>Marsteen</strong> All rights reserved</p>
+              <!-- <p>copyright © <script>document.write(new Date().getFullYear())</script> <strong>Marsteen</strong> All rights reserved</p> -->
+              <div class="footer-section">
+                <div class="left-side">
+                  <div class="secondary-logo-wrapper">
+                    <img src="/assets/images/Secondary-Logo.png" alt="Marsteen-logo" class="secondary-logo-img">
+                  </div>
+  
+                  <div class="aboutus-description-wrapper">
+                    <p class="aboutus-description">تیم من کارت دعوت نمیخواد لاشخوری میریزیم نه فک نکن نمیایم پشت هم عین تکرار سریال خواستیم خوب بشیم بطریه نمیزاشت شنیدم یجا من باشم نمیای تا سر کوچه حتی نه خایه پاپ بسیار دورته سیاه لشکر چه زیاد بیارشون میدیم دست هر کدوم یه خیار </p>
+                  </div>
+                </div>
+
+                <div class="middle-side">
+                  <div class="label-wrapper">
+                    <h3 class="label">مارزتین</h3>
+                  </div>
+                
+                  <ul>
+                    <li class="item"><a href="#">درباره ما</a></li>
+                    <li class="item"><a href="#">نمونه کار ها</a></li>
+                    <li class="item"><a href="#">مشاوره تلفنی رایگان</a></li>
+                    <li class="item"><a href="#">تماس با ما</a></li>
+                    <li class="item"><a href="#">مقالات</a></li>
+                  </ul>
+                </div>
+
+                <div class="right-side">
+                  <div class="enamad-logo-wrapper">
+                    <img src="/assets/images/enamad.png" alt="enamad" class="enamad-img">
+                    <!-- <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=269978&amp;Code=Xtl7k46WBQwlzzRjc2aT"><img referrerpolicy="origin" src="https://Trustseal.eNamad.ir/logo.aspx?id=269978&amp;Code=Xtl7k46WBQwlzzRjc2aT" alt="" style="cursor:pointer" id="Xtl7k46WBQwlzzRjc2aT"></a> -->
+                  </div>
+
+                  <div class="support-section">
+                    <p class="support-number">شماره تماس پشتیبانی: 8186-202-0920</p>
+                  </div>
+
+                  <div class="social-media-wrapper">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <p class="right-section">تمام حقوق این وب سایت برای تیم <strong>مارزتین</strong> محفوظ است</p>
             </div>
           </div>
         </div>

@@ -195,12 +195,6 @@ body {
     font-weight: 600;
 }
 
-.article-header2 .article-sub-title{
-    text-align: left;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.644);
-}
-
 .article-header2 .article-meta{
     display: flex;
     justify-content: space-between;
@@ -337,10 +331,6 @@ body {
 
 @media only screen and (max-width: 992px) {
     .article-header2 .article-title{
-        font-size: 1.5rem;
-    }
-
-    .article-header2 .article-sub-title{
         font-size: 1.5rem;
     }
 

@@ -39,6 +39,10 @@ body{
     .customer-satisfaction .customer-info-wrapper .customer-name p:nth-child(2){
         font-size: 1rem;
     }
+
+    .footer-wrapper .footer-section>.middle-side{
+        width: 20rem;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -124,6 +128,12 @@ body{
 
     .customer-satisfaction .carousel-buttons{
         justify-content: space-between;
+    }
+
+    .footer-wrapper .footer-section{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1.5rem;
     }
 }
 
@@ -233,6 +243,11 @@ body{
 
     .customer-satisfaction .customer-info .customer-info-wrapper .customer-logo-brand{
         flex-basis: 5rem;
+    }
+
+    .footer-wrapper .footer-section>.middle-side{
+        align-items: center;
+        width: 100%;
     }
 }
 

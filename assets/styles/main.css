@@ -16,6 +16,10 @@ body {
     overflow-x: hidden;
 }
 
+a{
+    text-decoration: none;
+}
+
 .container {
     max-width: 70rem;
     margin-right: auto;
@@ -125,7 +129,7 @@ body {
     gap: 1rem;
   }
   
-  .link {
+.link {
     background: none;
     border: none;
     text-decoration: none;
@@ -134,16 +138,16 @@ body {
     font-size: inherit;
     cursor: pointer;
     padding: 0;
-  }
+}
   
   .dropdown-section.active > .link,
   .link:hover {
     color: black;
   }
 
-  .dropdown-section.active{
+  /* .dropdown-section.active{
     pointer-events: none;
-  }
+  } */
   
   .dropdown-section {
     position: relative;
@@ -214,15 +218,13 @@ body {
 
 .landing .landing-title-right p{
     font-size: 1.1rem;
-    margin-bottom: 1.1rem;
+    margin-bottom: 1.7rem;
 }
 
 .landing .landing-title-right .consultant-btn{
-    outline: none;
-    border: none;
     color: #fff;
     border-radius: 1rem;
-    padding: .5rem;
+    padding: .4rem .8rem;
     cursor: pointer;
     background-color: #1DBA9B;
     text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.198);
@@ -345,6 +347,10 @@ body {
     text-align: center;
     line-height: 1.4rem;
     opacity: 80%;
+}
+
+.team-wrapper .members .member .headline-section p span{
+    font-family: "TTNorms";
 }
 
 /* customers satisfations section */
@@ -481,11 +487,130 @@ body {
     display: block;
 }
 
-.footer-wrapper>p{
-    color: #688BA9;
-    text-align: center;
-    font-size: .95rem;
-    font-family: "TTNorms";
+.footer-wrapper .footer-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: rtl;
+}
+
+.footer-wrapper .footer-section>.left-side{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 18rem;
+    padding: 1rem;
+}
+
+.footer-wrapper .footer-section>.left-side .secondary-logo-wrapper{
+    max-width: 16rem;
+}
+
+.footer-wrapper .footer-section>.left-side .secondary-logo-wrapper .secondary-logo-img{
+    width: 100%;
+}
+
+.footer-wrapper .footer-section>.left-side .aboutus-description-wrapper{
+    margin-top: .5rem;
+}
+
+.footer-wrapper .footer-section>.left-side .aboutus-description-wrapper .aboutus-description{
     margin: 0;
-    padding-bottom: .4rem;
+    padding: 0;
+    line-height: 1.6rem;
+    text-align: justify;
+    font-size: .9rem;
+}
+
+.footer-wrapper .footer-section>.right-side{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    max-width: 20rem;
+    padding: 1rem;
+}
+
+.footer-wrapper .footer-section>.right-side .enamad-logo-wrapper{
+    max-width: 7rem;
+}
+
+.footer-wrapper .footer-section>.right-side .enamad-logo-wrapper .enamad-img{
+    width: 100%;
+}
+
+.footer-wrapper .footer-section>.right-side .support-section .support-number{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6rem;
+    font-size: .9rem;
+}
+
+.footer-wrapper .footer-section>.right-side .social-media-wrapper a{
+    color: rgba(0, 0, 0, 0.774);
+}
+
+.footer-wrapper .footer-section>.right-side .social-media-wrapper i{
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.footer-wrapper .footer-section>.right-side .social-media-wrapper i:hover{
+    transform: scale(1.15);
+}
+
+.footer-wrapper .footer-section>.right-side .social-media-wrapper a:hover:nth-child(1){
+    color: #E1306C;
+}
+
+.footer-wrapper .footer-section>.right-side .social-media-wrapper a:hover:nth-child(2){
+    color: #16a44a;
+}
+
+.footer-wrapper .footer-section>.right-side .social-media-wrapper a:hover:nth-child(3){
+    color: #0E76A8;
+}
+
+.footer-wrapper .footer-section>.middle-side{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    width: 25rem;
+    padding: 1rem;
+}
+
+.footer-wrapper .footer-section>.middle-side .label-wrapper .label{
+    margin: 0;
+    font-weight: 600;
+}
+
+.footer-wrapper .footer-section>.middle-side ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-wrapper .footer-section>.middle-side ul>.item, .item>a{
+    line-height: 2rem;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.65);
+    transition: margin-right 200ms;
+}
+
+.footer-wrapper .footer-section>.middle-side ul>.item:hover{
+    margin-right: .3rem;
+}
+
+.footer-wrapper .right-section{
+    color: #475d71;
+    text-align: center;
+    font-size: .97rem;
+    font-family: "vazir";
+    margin: 0;
+    padding: 1.2rem 0;
 }
