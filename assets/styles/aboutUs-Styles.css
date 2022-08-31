@@ -1,0 +1,360 @@
+/* Main */
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    font-family: "vazir";
+    overflow: hidden;
+    background-color: #eeeeee;
+}
+
+.container {
+    max-width: 70rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.wave-navbar-articles-form{
+    transform: rotate(180deg);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    display: block;
+    margin-top: -1.7rem;
+}
+
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-wrapper .logo{
+    flex-basis: 7rem; /*125px*/
+}
+
+.navbar-wrapper .logo .logo-img{
+    display: block;
+    width: 100%; 
+}
+
+.menu-items-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu-items{
+    list-style-type: none;
+    direction: rtl;
+    display: flex;
+    margin: 0;
+    padding-right: 0;
+}
+
+.menu-items .item{
+    display: inline;
+}
+
+.menu-items .item .item-link{
+    text-decoration: none;
+    padding: 0 1rem;
+    color: #081D43;
+    position: relative;
+    padding-bottom: .5rem;
+}
+
+.item-link::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .125rem;
+    border-radius: .5rem;
+    background-color: #27ae60;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+.item-link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.dropdown-menu{
+    cursor: pointer;
+    font-size: 1.6rem;
+    display: none;
+}
+
+.title-wrapper{
+    margin-top: 9rem;
+}
+
+.title-wrapper .title{
+    text-align: center;
+    font-size: 1.7rem;
+    /* position: relative; */
+    font-weight: 300;
+    color: #080808;
+    transition: all 0.4s ease 0s;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1rem;
+    gap: 1.375rem;
+}
+
+.title-wrapper .title:after, .title-wrapper .title:before{
+    content: " ";
+    display: block;
+    border-bottom: .125rem solid #ccc;
+    background-color: transparent;
+}
+
+.aboutus-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.aboutus-section .team-wrapper{
+    
+}
+
+.aboutus-section .team-wrapper .members{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.aboutus-section .team-wrapper .members .member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: gap .2s;
+}
+
+.aboutus-section .team-wrapper .members .member:hover{
+    cursor: pointer;
+    gap: 2rem;
+}
+
+.aboutus-section .team-wrapper .members .member .profile-img-wrapper{
+    max-width: 15rem;
+}
+
+.aboutus-section .team-wrapper .members .member .profile-img-wrapper .profile-img{
+    width: 100%;
+    border-radius: 2rem;
+    border: 0.0625rem solid black;
+}
+
+.aboutus-section .team-wrapper .members .member .name-section{
+    text-align: center;
+}
+
+.aboutus-section .team-wrapper .members .member .name-section p:nth-child(1){
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.aboutus-section .team-wrapper .members .member .name-section p:nth-child(2){
+    margin: .4rem 0;
+    max-width: 10rem;
+    line-height: 1.4rem;
+    opacity: 80%;
+}
+
+.aboutus-section .team-wrapper .members .member .name-section p span{
+    font-family: "TTNorms";
+}
+
+.aboutus-section .description-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.aboutus-section .description-wrapper .text-section{
+    direction: rtl;
+}
+
+.aboutus-section .description-wrapper .text-section .text{
+    text-align: justify;
+    margin: 0;
+    line-height: 1.7rem;
+}
+
+.aboutus-section .description-wrapper .logo-section{
+    min-width: 13rem;
+    max-width: 13rem;
+}
+
+.aboutus-section .description-wrapper .logo-section .logo-img{
+    width: 100%;
+}
+
+.f{
+    background-color: #BBEBE1;
+}
+
+.wave-footer{
+    display: block;
+}
+
+.footer-wrapper>p{
+    color: #688BA9;
+    text-align: center;
+    font-size: .95rem;
+    font-family: "TTNorms";
+    margin: 0;
+    padding-bottom: .4rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .title{
+        padding-top: .4rem;
+    }
+
+    .title-wrapper{
+        margin-top: 6rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .title{
+        font-size: 1.6rem;
+        padding-top: .5rem;
+    }
+
+    .title-wrapper{
+        margin-top: 4rem;
+    }
+
+    .aboutus-section .team-wrapper .members .member .profile-img-wrapper{
+        max-width: 12rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .navbar-wrapper .menu-items{
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: -192px;
+        bottom: 0;
+        background-color: #D0F1EA;
+        width: 12rem;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        transition: .3s all;
+        filter: drop-shadow(.3125rem .625rem .9375rem rgba(8,9,13,.4));
+    }
+
+    .navbar-wrapper .menu-items .item{
+        margin-top: 1.2rem;
+        font-size: 1.1rem;
+        border-bottom: .09rem solid #666;
+    }
+
+    .menu-items-wrapper .dropdown-menu{
+        display: block;
+    }
+
+    .navbar .navbar-wrapper .logo{
+        flex-basis: 6rem;
+    }
+
+    .title{
+        padding-top: .2rem;
+    }
+
+    .title-wrapper{
+        margin-top: 3rem;
+    }
+
+    .aboutus-section .team-wrapper .members{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .aboutus-section .description-wrapper{
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .wave-navbar-articles-form{
+        width: 44rem;
+    }
+    
+    .navbar .navbar-wrapper .logo{
+        flex-basis: 5.5rem;
+    }
+
+    .item-link::before{
+        display: none;
+    }
+
+    .title{
+        font-size: 1.5rem;
+        padding-top: .1rem;
+    }
+
+    .title-wrapper{
+        margin-top: 2rem;
+    }
+
+    .aboutus-section .team-wrapper .members{
+        flex-direction: column;
+    }
+
+    .aboutus-section .team-wrapper .members .member:nth-child(2){
+        order: -1;
+    }
+
+    .aboutus-section .description-wrapper .text-section{
+        max-width: 16rem;
+    }
+}
