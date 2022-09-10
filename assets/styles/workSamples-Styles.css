@@ -212,14 +212,14 @@ body {
     background-color: #f39c12;
 }
 
-#overlay.active{
+/* #overlay.active{
     filter: blur(.3rem);
     background-color: rgba(0, 0, 0, 0.3);
     pointer-events: none;
     user-select: none;
-}
+} */
 
-.popup{
+/* .popup{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -354,7 +354,7 @@ body {
 .popup .buttons-wrapper .visit-site-btn:active{
     transform: translateY(0.25rem);
     box-shadow: 0 0.1875rem 0 #094c66;
-}
+} */
 
 .customer-title{
     width: 100%;
@@ -380,25 +380,21 @@ body {
     background-color: transparent;
 }
 
-.comment-wrapper .voice-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .5rem 1rem;
-    backdrop-filter: blur(1rem) saturate(180%);
-    background-color: rgba(117, 218, 97, 0.5);
+.comment-wrapper .message-wrapper{
+    padding: .6rem 1rem;
+    backdrop-filter: blur(.1rem) saturate(180%);
     border-radius: 1rem;
     border: .125rem solid rgba(209, 213, 219, 0.3);
     margin: 0 auto;
     max-width: 18rem;
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
-audio{
-	display: none;
-}
-
-.comment-wrapper .voice-wrapper>.left-side .play-btn{
-    cursor: pointer;
+.comment-wrapper .message-wrapper .message{
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    line-height: 2rem;
 }
 
 .f{
@@ -416,7 +412,7 @@ audio{
     font-family: "TTNorms";
     margin: 0;
     padding-bottom: .4rem;
-}
+} 
 
 @media only screen and (max-width: 1200px) {
     .title{
