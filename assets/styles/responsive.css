@@ -146,12 +146,13 @@ body{
         /* display: none; */
         position: fixed;
         top: 0;
-        left: -192px;
+        left: -230px;
         bottom: 0;
         background-color: #D0F1EA;
         width: 12rem;
         flex-direction: column;
         padding: 2rem 1rem;
+        z-index: 1;
         transition: .3s all;
         filter: drop-shadow(.3125rem .625rem .9375rem rgba(8,9,13,.4));
     }

@@ -9,7 +9,7 @@ navMenuBtn.addEventListener("click", function(){
         navMenuBtnIcon.style.transition = ".5s all";
     }
     else{
-        navMenu.style.left = "-192px";
+        navMenu.style.left = "-230px";
         navMenuBtnIcon.classList = "fa fa-bars";
     }
 });
