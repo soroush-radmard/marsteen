@@ -258,7 +258,8 @@ body{
     }
 
     .wave-navbar{
-        width: 44rem;
+        min-width: 44rem;
+        overflow-x: hidden;
     }
 
     .navbar .navbar-wrapper .logo{
@@ -332,10 +333,6 @@ body{
 
     .customer-satisfaction .customer-info .customer-info-wrapper .customer-logo-brand{
         flex-basis: 4rem;
-    }
-
-    .duration{
-        margin-left: 10rem;
     }
 
     .customer-satisfaction .carousel-buttons button{

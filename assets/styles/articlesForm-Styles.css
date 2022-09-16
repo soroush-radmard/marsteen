@@ -153,9 +153,10 @@ body {
     flex-direction: column;
     text-align: right;
     direction: rtl;
+    overflow: hidden;
 }
 
-.card .article-thumbnail, .card .title-article{
+.card .title-article{
     padding: 1rem;
 }
 

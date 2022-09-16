@@ -13,3 +13,13 @@ navMenuBtn.addEventListener("click", function(){
         navMenuBtnIcon.classList = "fa fa-bars";
     }
 });
+
+document.addEventListener('keydown', preventKeyBoardScroll, false);
+
+function preventKeyBoardScroll(e) {
+  var keys = [37, 39];
+  if (keys.includes(e.keyCode)) {
+    e.preventDefault();
+    return false;
+  }
+}   
